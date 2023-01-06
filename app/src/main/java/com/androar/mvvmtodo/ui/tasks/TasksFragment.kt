@@ -43,6 +43,7 @@ class TasksFragment : Fragment(R.layout.tasks_fragment) {
         setHasOptionsMenu(true)
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.menu_fragment_tasks, menu)
@@ -54,6 +55,7 @@ class TasksFragment : Fragment(R.layout.tasks_fragment) {
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_sort_by_name -> {
