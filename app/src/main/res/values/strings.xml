@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MVVMTodo</string>
+    <string name="app_name">Android Boilerplate</string>
     <string name="add_tasks_fab_content_description">Add New Tasks</string>
     <string name="task_name">Task Name</string>
     <string name="important_task">Important Task</string>
