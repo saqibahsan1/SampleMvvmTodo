@@ -7,7 +7,7 @@ interface RetrofitProvider<NetworkServiceType> : Provider<Retrofit> {
     val serviceType: NetworkServiceType
 }
 
-interface TawkeelRetrofitProvider : RetrofitProvider<NetworkServiceType> {
+interface AppRetrofitProvider : RetrofitProvider<NetworkServiceType> {
     override val serviceType: NetworkServiceType
         get() = NetworkServiceType.Tawkeel
 }

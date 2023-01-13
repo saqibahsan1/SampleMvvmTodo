@@ -8,11 +8,11 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Inject
 
-class DefaultTawkeelRetrofitProvider @Inject constructor(
+class DefaultlRetrofitProvider @Inject constructor(
     private val appLocaleProvider: AppLocaleProvider,
     private val okHttpClientProvider: OKHttpClientProvider,
     private val tawkeelApiHeaderInterceptor: TawkeelApiHeaderInterceptor
-) : TawkeelRetrofitProvider {
+) : AppRetrofitProvider {
 
     override fun get(): Retrofit {
         val okHttpBuilder = okHttpClientProvider.get()
